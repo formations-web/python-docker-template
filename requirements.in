@@ -1,0 +1,11 @@
+# Scripting HTTP / réseau
+requests
+httpx
+
+# Frameworks web
+flask
+fastapi
+uvicorn
+
+# Calculs
+numpy
