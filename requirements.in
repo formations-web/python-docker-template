@@ -9,3 +9,4 @@ uvicorn
 
 # Calculs
 numpy
+asyncio

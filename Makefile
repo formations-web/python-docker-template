@@ -5,7 +5,8 @@ help: ## Affiche l'aide
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "  \033[36m%-10s\033[0m %s\n", $$1, $$2}'
 
 env: ## Génère le fichier .env du projet
-	@echo "UID=$$(id -u)\nGID=$$(id -g)" > .env
+	@echo "UID=$$(id -u)" > .env
+	@echo "GID=$$(id -g)" >> .env
 
 up: ## Démarre le container
 	docker compose up -d
